@@ -99,9 +99,6 @@ importers:
 
   chrome-extension:
     dependencies:
-      '@chrome-extension-boilerplate/shared':
-        specifier: workspace:*
-        version: link:../packages/shared
       '@chrome-extension-boilerplate/storage':
         specifier: workspace:*
         version: link:../packages/storage
@@ -165,30 +162,16 @@ importers:
         specifier: ^10.9.2
         version: 10.9.2(@swc/core@1.6.1)(@types/node@20.14.10)(typescript@5.4.5)
 
-  packages/shared:
-    devDependencies:
-      '@chrome-extension-boilerplate/storage':
-        specifier: workspace:*
-        version: link:../storage
-      '@chrome-extension-boilerplate/tsconfig':
-        specifier: workspace:*
-        version: link:../tsconfig
-
   packages/storage:
     devDependencies:
       '@chrome-extension-boilerplate/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
 
-  packages/tailwind-config: {}
-
   packages/tsconfig: {}
 
   pages/content:
     dependencies:
-      '@chrome-extension-boilerplate/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
       '@chrome-extension-boilerplate/storage':
         specifier: workspace:*
         version: link:../../packages/storage
@@ -196,133 +179,6 @@ importers:
       '@chrome-extension-boilerplate/hmr':
         specifier: workspace:*
         version: link:../../packages/hmr
-      '@chrome-extension-boilerplate/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-
-  pages/content-ui:
-    dependencies:
-      '@chrome-extension-boilerplate/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
-    devDependencies:
-      '@chrome-extension-boilerplate/hmr':
-        specifier: workspace:*
-        version: link:../../packages/hmr
-      '@chrome-extension-boilerplate/tailwindcss-config':
-        specifier: workspace:*
-        version: link:../../packages/tailwind-config
-      '@chrome-extension-boilerplate/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-
-  pages/devtools:
-    dependencies:
-      '@chrome-extension-boilerplate/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
-    devDependencies:
-      '@chrome-extension-boilerplate/hmr':
-        specifier: workspace:*
-        version: link:../../packages/hmr
-      '@chrome-extension-boilerplate/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-
-  pages/devtools-panel:
-    dependencies:
-      '@chrome-extension-boilerplate/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
-      '@chrome-extension-boilerplate/storage':
-        specifier: workspace:*
-        version: link:../../packages/storage
-    devDependencies:
-      '@chrome-extension-boilerplate/hmr':
-        specifier: workspace:*
-        version: link:../../packages/hmr
-      '@chrome-extension-boilerplate/tailwindcss-config':
-        specifier: workspace:*
-        version: link:../../packages/tailwind-config
-      '@chrome-extension-boilerplate/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-
-  pages/new-tab:
-    dependencies:
-      '@chrome-extension-boilerplate/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
-      '@chrome-extension-boilerplate/storage':
-        specifier: workspace:*
-        version: link:../../packages/storage
-    devDependencies:
-      '@chrome-extension-boilerplate/hmr':
-        specifier: workspace:*
-        version: link:../../packages/hmr
-      '@chrome-extension-boilerplate/tailwindcss-config':
-        specifier: workspace:*
-        version: link:../../packages/tailwind-config
-      '@chrome-extension-boilerplate/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-      sass:
-        specifier: 1.77.6
-        version: 1.77.6
-
-  pages/options:
-    dependencies:
-      '@chrome-extension-boilerplate/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
-      '@chrome-extension-boilerplate/storage':
-        specifier: workspace:*
-        version: link:../../packages/storage
-    devDependencies:
-      '@chrome-extension-boilerplate/hmr':
-        specifier: workspace:*
-        version: link:../../packages/hmr
-      '@chrome-extension-boilerplate/tailwindcss-config':
-        specifier: workspace:*
-        version: link:../../packages/tailwind-config
-      '@chrome-extension-boilerplate/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-
-  pages/popup:
-    dependencies:
-      '@chrome-extension-boilerplate/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
-      '@chrome-extension-boilerplate/storage':
-        specifier: workspace:*
-        version: link:../../packages/storage
-    devDependencies:
-      '@chrome-extension-boilerplate/hmr':
-        specifier: workspace:*
-        version: link:../../packages/hmr
-      '@chrome-extension-boilerplate/tailwindcss-config':
-        specifier: workspace:*
-        version: link:../../packages/tailwind-config
-      '@chrome-extension-boilerplate/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-
-  pages/side-panel:
-    dependencies:
-      '@chrome-extension-boilerplate/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
-      '@chrome-extension-boilerplate/storage':
-        specifier: workspace:*
-        version: link:../../packages/storage
-    devDependencies:
-      '@chrome-extension-boilerplate/hmr':
-        specifier: workspace:*
-        version: link:../../packages/hmr
-      '@chrome-extension-boilerplate/tailwindcss-config':
-        specifier: workspace:*
-        version: link:../../packages/tailwind-config
       '@chrome-extension-boilerplate/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -4278,7 +4134,8 @@ snapshots:
 
   ignore@5.2.4: {}
 
-  immutable@4.3.5: {}
+  immutable@4.3.5:
+    optional: true
 
   import-fresh@3.3.0:
     dependencies:
@@ -4937,6 +4794,7 @@ snapshots:
       chokidar: 3.5.3
       immutable: 4.3.5
       source-map-js: 1.2.0
+    optional: true
 
   scheduler@0.23.0:
     dependencies:
