@@ -19,7 +19,8 @@
     "lint": "turbo lint --continue -- --fix --cache --cache-location node_modules/.cache/.eslintcache",
     "lint:fix": "turbo lint:fix --continue -- --fix --cache --cache-location node_modules/.cache/.eslintcache",
     "prettier": "turbo prettier --continue -- --cache --cache-location node_modules/.cache/.prettiercache",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "release-it"
   },
   "type": "module",
   "dependencies": {
@@ -48,6 +49,8 @@
     "lint-staged": "^15.2.7",
     "postcss": "^8.4.38",
     "prettier": "^3.3.2",
+    "release-it": "^17.5.0",
+    "release-it-pnpm": "^4.6.2",
     "rimraf": "^5.0.7",
     "tailwindcss": "^3.4.4",
     "tslib": "^2.6.3",

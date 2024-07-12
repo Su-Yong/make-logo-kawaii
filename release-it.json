@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/release-it@17/schema/release-it.json",
+  "plugins": {
+    "release-it-pnpm": {}
+  },
+  "git": {
+    "commitMessage": "release: v${version}",
+    "tagName": "v${version}"
+  },
+  "github": {
+    "release": true
+  },
+  "npm": {
+    "publish": false
+  }
+}
