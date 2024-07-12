@@ -19,3 +19,6 @@
 
 # compiled
 chrome-extension/public/manifest.json
+
+# build file
+make-logo-kawaii.zip

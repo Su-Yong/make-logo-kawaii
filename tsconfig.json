@@ -1,0 +1,7 @@
+{
+  "extends": "@chrome-extension-boilerplate/tsconfig/base",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  }
+}
