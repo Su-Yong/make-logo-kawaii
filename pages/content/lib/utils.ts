@@ -49,12 +49,14 @@ export const runOnReactPage = (url: string, fn: () => Removable) => {
 };
 
 export const wait = (ms: number = 100) => new Promise(resolve => setTimeout(resolve, ms));
-export const createImage = (url: string) => {
+export const createImage = (url: string, style = true) => {
   const image = document.createElement('img');
   image.src = toURL(url);
-  image.style.width = '100%';
-  image.style.height = '100%';
-  image.style.objectFit = 'contain';
+  if (style) {
+    image.style.width = '100%';
+    image.style.height = '100%';
+    image.style.objectFit = 'contain';
+  }
 
   return image;
 };
