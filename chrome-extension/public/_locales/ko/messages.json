@@ -1,10 +1,10 @@
 {
   "extensionDescription": {
-    "description": "로고를 uwu하게 만듭니다",
-    "message": "uwu?"
+    "description": "모든 로고를 Kawaii하게 만듭니다. (해당 로고들은 SAWARATSUKI의 소유이며 `github.com/SAWARATSUKI/KawaiiLogos` 에서 확인할 수 있습니다.)",
+    "message": "모든 로고를 Kawaii하게 만듭니다. uwu?"
   },
   "extensionName": {
-    "description": "uwu",
-    "message": "uwu?"
+    "description": "uwu?",
+    "message": "Make Logo Kawaii"
   }
 }

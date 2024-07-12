@@ -18,7 +18,7 @@ const manifest = Object.assign({
     type: 'module',
   },
   icons: {
-    128: 'icon-128.png',
+    128: 'icon.png',
   },
   content_scripts: [
     {
